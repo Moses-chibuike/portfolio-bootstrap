@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moses' Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -193,20 +195,22 @@
             <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it</p>
             <form action="https://formspree.io/f/mknagznd" method="post">
 
-                <fieldset class="contact-form">
-                    <label for="username">
-                        <input type="text" class="input-contact" required name="username" maxlength="30" placeholder="Username">
-                    </label>
-                    <label for="email">
-                        <input type="email" class="input-contact" required name="email" placeholder="name@domain.com">
-                    </label>
-                    <label for="message">
-                        <textarea name="message" class="message-input" required maxlength="500" placeholder="Write your message here"></textarea>
-                    </label>
-                    <div class="button">
-                      <button type="submit" class="btn last-btn">Get It Touch</button>
+                <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                     </div>
-                </fieldset>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
                 <img src="image-source/Ellipse 5.png" class="ellipse-5 el" alt="">
                 <img src="image-source/Rectangle 7.png" class="rectangle-7 el" alt="">
             </form>
