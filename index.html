@@ -6,23 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moses' Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 <body>
-    <header>
-            <h2 class="logo"><a href="#main-section">Moses</a></h2>
-            <nav class="nav-link">
-                <ul>
-                    <li class="trans"><a href="#portfolio-works">Portfolio</a></li>
-                    <li class="trans"><a href="#About">About</a></li>
-                    <li class="trans"><a href="#Contact">Contact</a></li>
+    <header class="navbar navbar-light bg-light">
+            <h2 class="navbar-brand"><a href="#main-section">Moses</a></h2>
+                <ul class="nav nav-tabs justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#portfolio-works">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#About">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#Contact">Contact</a>
+                    </li>
                 </ul>
-            </nav>
             <div class="menu">
                 <ul>
-                    <li><a href="#"><img src="image-source/Icon - Menu.png" alt="Humberger_menu"></a></li></ul>
+                    <li class="invisible navbar-toggler">
+                        <a href="#"><img src="image-source/Icon - Menu.png" alt="Humberger_menu"></a>
+                    </li>
+                </ul>
             </div>
     </header>
     <main>
@@ -216,5 +222,6 @@
             </form>
         </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
