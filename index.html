@@ -6,21 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moses' Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 <body>
-    <header>
-            <h2 class="logo"><a href="#main-section">Moses</a></h2>
-            <nav class="nav-link">
-                <ul>
-                    <li class="trans"><a href="#portfolio-works">Portfolio</a></li>
-                    <li class="trans"><a href="#About">About</a></li>
-                    <li class="trans"><a href="#Contact">Contact</a></li>
+    <header class="navbar navbar-light bg-light">
+            <h2 class="navbar-brand"><a href="#main-section">Moses</a></h2>
+                <ul class="nav nav-tabs justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#portfolio-works">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#About">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#Contact">Contact</a>
+                    </li>
                 </ul>
-            </nav>
             <div class="menu">
                 <ul>
-                    <li><a href="#"><img src="image-source/Icon - Menu.png" alt="Humberger_menu"></a></li></ul>
+                    <li class="invisible navbar-toggler">
+                        <a href="#"><img src="image-source/Icon - Menu.png" alt="Humberger_menu"></a>
+                    </li>
+                </ul>
             </div>
     </header>
     <main>
@@ -38,12 +46,12 @@
 
         </section>
         <section id="portfolio-works" class="Works">
-            <div class="card port-one">
+            <div class="card" style="width: 25rem;">
                 <!-- <div class="profile"><img src="image-source/Snapshoot Portfolio.png" alt="project 1"></div> -->
-                <div class="profile"><img src="image-source/Snapshoot Portfolio.png" alt="project 1"></div>
+                <div class="profile"><img class="card-img-top" src="image-source/Snapshoot Portfolio.png" alt="project 1"></div>
                 <div class="card-port-description">
                     <h3>Tonic</h3>
-                    <div class="profile-description">
+                    <div class="card-body">
                         <h4>CANOPY</h4>
                         <img src="image-source/Counter.png" alt="">
                         <p>Back End Dev</p>
@@ -193,24 +201,27 @@
             <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it</p>
             <form action="https://formspree.io/f/mknagznd" method="post">
 
-                <fieldset class="contact-form">
-                    <label for="username">
-                        <input type="text" class="input-contact" required name="username" maxlength="30" placeholder="Username">
-                    </label>
-                    <label for="email">
-                        <input type="email" class="input-contact" required name="email" placeholder="name@domain.com">
-                    </label>
-                    <label for="message">
-                        <textarea name="message" class="message-input" required maxlength="500" placeholder="Write your message here"></textarea>
-                    </label>
-                    <div class="button">
-                      <button type="submit" class="btn last-btn">Get It Touch</button>
+                <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                     </div>
-                </fieldset>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
                 <img src="image-source/Ellipse 5.png" class="ellipse-5 el" alt="">
                 <img src="image-source/Rectangle 7.png" class="rectangle-7 el" alt="">
             </form>
         </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -11,7 +11,7 @@ body {
   width: 100%;
 }
 
-header {
+/* .navbar-expand {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -19,11 +19,29 @@ header {
   max-width: 100%;
 }
 
-li {
-  cursor: pointer;
+.navbar-brand {
+
 }
 
-.logo a {
+.nav {
+
+}
+
+.nav-item {
+
+}
+
+.nav-link {
+
+} */
+
+
+
+
+
+
+
+/* .navbar-brand a {
   font-size: 1.6rem;
   white-space: nowrap;
   font-weight: 800;
@@ -632,4 +650,4 @@ fieldset {
     transition-property: padding-bottom;
     transition-duration: 1s;
   }
-}
+} */
